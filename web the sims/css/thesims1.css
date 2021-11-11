@@ -1,0 +1,118 @@
+
+*{/*padronizar a pag */
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+   /* especificar parametros do site */
+    background-image: linear-gradient(50deg,rgb(169, 250, 169) 45%, rgb(42, 109, 233) 80%);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+  
+
+nav{ /*cor altura e largura barra de navegaçao*/
+    background: rgba(0, 0, 0, 0.87);
+   height: 80px;
+   width: 100%;
+}
+label.logo{
+    color: rgba(250, 250, 250, 0.945);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 9px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display:inline-block ;
+    line-height: 80px;
+    margin: 0px 1px;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 17px;
+    padding: 7px 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+a:hover, a:active{
+    background: rgba(64, 224, 208, 0.788);
+    transition: .2s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+
+}
+@media (max-width: 1120px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-inline: 30px;
+    }
+    nav ul li a{
+        font-size: 9px;
+    }
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(22, 152, 156);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+font-size: 10px;
+flex-wrap: nowrap;
+    }
+    a:hover, a.activo{
+        background: salmon;
+        color: rgb(160, 41, 144);
+    }
+    #check:checked ~ul{
+        left:0;
+    }
+}
