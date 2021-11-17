@@ -1,4 +1,4 @@
-
+/* pag the sims 1 */
 *{/*padronizar a pag */
     
     margin:0;
@@ -16,7 +16,7 @@ body{
    overflow-y: scroll;
 }
   
-
+/* barra de navegação */
 nav{ /*cor altura e largura barra de navegaçao*/
     background: rgba(0, 0, 0, 0.87);
    height: 80px;
@@ -115,4 +115,104 @@ flex-wrap: nowrap;
     #check:checked ~ul{
         left:0;
     }
+    /* fim barra de navegação */
+
+    
 }
+/* capa de img */
+
+ .img-Capaa{/* padrão */
+     width: 95%;
+     margin-left: 2%;
+     margin-right: 2%;
+     margin-top: 2%;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.87);
+     cursor: pointer;
+ }
+ .img-Capaa:hover{/* transições img principal */
+     width: 40%;
+     height: 600px;
+     margin-left: 3%;
+     margin-top: 4%;
+     transition: all .1s;
+     box-shadow:  10px 10px 10px 10px rgba(0, 0, 0, 0.87);
+     transform: scale(1.1);
+     
+ }
+ .primeiro-pcts{/* primeiros pacotes transparente */
+     width: 95%;
+     margin-top: -400px;
+     margin-left: 2%;
+     opacity: 0%;
+     
+ }
+ .primeiro-pcts ul li{/* padronizar listas dos primeirs pacotes */
+     display: inline-flex;
+     width: 40px;
+     margin-inline: 80px;
+     margin-top: -100px;
+ }
+ .capa:hover .primeiro-pcts{/* transições primeiros pacotes */
+     margin-left: 47%;
+     margin-top: -38%;
+     opacity: 95%;
+     transition: all .1s;
+     transform: scale(1.1);
+ }
+ .primeiro-pcts ul li{/* sombra na li do pct1 */
+     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.87);
+ }
+
+ .segundo-pcts{
+     width: 95%;
+     margin-top: -100px;
+     opacity: 0%;
+ }
+
+ .segundo-pcts ul li{
+     display: inline-flex;
+     width: 15%;
+     margin-inline: 20px;
+ }
+ .capa:hover .segundo-pcts{
+     width: 80%;
+     height: 5%;
+     margin-left: 51%;
+     margin-top: 17%;
+     opacity: 95%;
+     transform: scale(1.1);
+     transition: all .1s;
+ }
+ .segundo-pcts ul li{
+     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.87);
+ }
+
+ .ultimo-pct{
+     width: 18%;
+     margin-top: 10%;
+     margin-left: 3%;
+     opacity: 0%;
+     
+ }
+ .capa:hover .ultimo-pct{
+     margin-top: -30%;
+     margin-left: 62%;
+     opacity: 90%;
+     transform: scale(1.1);
+     transition: all .1s;
+     
+ }
+ .capa:hover .ultimo-pct img{
+     position: relative;
+ }
+ .ultimo-pct{
+     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.87);
+ }
+
+
+ 
+
+
+
+ 
